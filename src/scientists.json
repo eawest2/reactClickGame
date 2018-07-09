@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Wolfgang Pauli",
+    "image": "https://i.pinimg.com/564x/92/c1/48/92c148da6e1514d20840d0bf4c7a5cc9.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Albert Einstein",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Albert_Einstein_%28Nobel%29.png"
+  },
+  {
+    "id": 3,
+    "name": "Galileo Galilei",
+    "image": "http://www.nmspacemuseum.org/halloffame/images/large/galilei.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Werner Heisenberg",
+    "image": "https://www.sciencesource.com/Doc/SCS/Media/TR1_WATERMARKED/d/0/6/b/SS2551386.jpg?d63642712969"
+  },
+  {
+    "id": 5,
+    "name": "Sir Robert Boyle",
+    "image": "http://knarf.english.upenn.edu/Gifs/boyle.gif"
+  },
+  {
+    "id": 6,
+    "name": "Sir Isaac Newton",
+    "image": "http://knarf.english.upenn.edu/Gifs/newton.gif"
+  },
+  {
+    "id": 7,
+    "name": "Plato",
+    "image": "http://web.nmsu.edu/~everettt/philosophy/images/plato.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Nikola Tesla",
+    "image": "http://www.technologycorp.com.au/wp-content/uploads/2015/09/PORTRAIT-Nikola-Tesla.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Michael Faraday",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Faraday_Cochran_Pickersgill.jpg/800px-Faraday_Cochran_Pickersgill.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Robert Oppenheimer",
+    "image": "https://www.osti.gov/opennet/manhattan-project-history/images/OppenheimerBlackboardLarge1.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Wernher von Braun",
+    "image": "http://giantsofscience.weebly.com/uploads/1/5/4/6/15469068/804534933_orig.jpg?175"
+  },
+  {
+    "id": 12,
+    "name": "Enrico Fermi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Enrico_Fermi_1943-49.jpg/800px-Enrico_Fermi_1943-49.jpg"
+  }
+]
