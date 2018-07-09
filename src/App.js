@@ -10,6 +10,7 @@ import "./App.css";
 
 
 let clicked = 0;
+let maxClicked = 0;
 let chosenArray = [];
 let defaultArray = [];
 let displayArray = [];
@@ -30,7 +31,9 @@ function shuffleArray(array) {
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    displayArray
+    displayArray,
+    clicked,
+    maxClicked
   };
 
   //Main logic function
@@ -44,10 +47,14 @@ class App extends Component {
           //if not, add him to the picked list
         chosenArray.push(scientist.id)
         console.log(chosenArray)
+        clicked++
+        if (clicked > maxClicked){
+          maxClicked++
+        };
         }
         else {
           //if he has been picked already, display losing text and reset array
-        clicked = -1;
+        clicked = 0;
         chosenArray = [];
         alert('You lost! Try again!')
         document.getElementsByClassName('scoreCurrent').innerHTML = '0';
@@ -59,20 +66,22 @@ class App extends Component {
 
     })
     //increment clicked
-    clicked++
     console.log(clicked);
-    document.getElementsByClassName('scoreCurrent').innerHTML = clicked;
+    document.getElementsByClassName('scoreCurrent').innerHTML = `${clicked}`;
     //shuffle scientists
     shuffleArray(displayArray)
     //Rerender main page
-    this.setState({ displayArray });
+    this.setState({ displayArray, clicked, maxClicked });
   };
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <div>
-        <Header/>
+        <Header
+          maxClicked={this.state.maxClicked}
+          clicked={this.state.clicked}
+        />
         <Wrapper>
 
           <Title>Click on the scientists below, but don't click any twice!</Title>

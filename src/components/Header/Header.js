@@ -11,7 +11,7 @@ const Header = props =>
                 Current Score:
     </span>
             <span className="navbar-text scoreCurrent text-success">
-                0
+                {props.clicked}
     </span>
             <span className="navbar-text mr-2 ml-2">
                 ||
@@ -20,7 +20,7 @@ const Header = props =>
                 Top Score:
     </span>
             <span className="navbar-text scoreMax text-white">
-                0
+                {props.maxClicked}
     </span>
         </div>
     </nav>
